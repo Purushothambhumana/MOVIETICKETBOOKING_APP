@@ -35,11 +35,11 @@ const Home = () => {
 
     return (
         <>
-            <div style={{ backgroundColor: 'var(--bms-light-gray)', padding: '2rem 0' }}>
+            <div className="hero-section">
                 <Container>
                     <Row className="align-items-center">
                         <Col md={6}>
-                            <h1 style={{ color: 'var(--bms-dark-gray)' }}>
+                            <h1>
                                 Welcome to Bhumana'Show
                             </h1>
                             <p className="text-muted">Book your favorite movies now!</p>
@@ -60,12 +60,12 @@ const Home = () => {
             <Container className="mt-4">
                 <Row className="align-items-center mb-4">
                     <Col md={6}>
-                        <h2 style={{ color: 'var(--bms-dark-gray)' }}>
+                        <h2 style={{ color: 'var(--bms-dark-gray)', fontWeight: '700' }}>
                             Movies Now Showing {filteredMovies.length > 0 && `(${filteredMovies.length})`}
                         </h2>
                     </Col>
                     <Col md={6}>
-                        <InputGroup>
+                        <InputGroup className="search-input-group">
                             <InputGroup.Text>
                                 <i className="bi bi-search"></i>
                             </InputGroup.Text>
